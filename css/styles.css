@@ -1,0 +1,304 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ededed;
+    background: #081b29;
+}
+
+/* ---------NAVBAR------------- */
+.nav-link {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: #00abf0;
+}
+
+.navbar-toggler {
+    border-color: #ededed;
+}
+
+.navbar-brand {
+    color: #ededed;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navbar-brand:hover {
+    color: #ededed;
+}
+
+.bx-menu {
+    color: #ededed;
+    font-size: 2rem;
+    margin-left: -5%;
+}
+
+/* ------------BLUE SECTION CSS------------ */
+.blue-section {
+    background: #081b29;
+    padding: 0 5%;
+}
+
+.container-blue h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.container-blue h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.container-blue p {
+    font-size: 15px;
+    font-weight: 200;
+    margin: 20px 0 40px;
+}
+
+.btn-box-blue {
+    width: 150px;
+    font-weight: 500;
+    color: #081b29;
+    background-color: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-box-blue:hover{
+    color: #00abf0;
+}
+
+.btn-box-blue::before {
+ content: '';
+ 
+ width: 0;
+ height: 100%;
+ border-radius: inherit;
+ position: absolute;
+ top: 0;
+ left: 0;
+ border: 2px solid #00abf0;
+ background-color: #081b29;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.btn-box-blue:hover::before {
+ width: 150px;
+}
+
+.home-sci {
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+/* ---------------WHITE SECTION CSS----------------- */
+.white-section {
+    color: #081b29;
+    background: #ededed;
+    padding: 0 5%;
+}
+
+.container-white h1 {
+    color: #081b29;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container-white h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.container-white p {
+    color: #081b29;
+    font-size: 15px;
+    
+}
+
+.about-info {
+    font-weight: 200;
+    margin: 20px 0 40px;
+}
+
+.bx-minus {
+    font-size: 2rem;
+}
+
+.btn-box-white {
+    width: 180px;
+    font-weight: 500;
+    color: #081b29;
+    background-color: #ededed;
+    border: 2px solid #081b29;
+    border-radius: 15px;
+    font-family: inherit;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-box-white:hover{
+    color: #ededed;
+    background-color: transparent;
+    border: 2px solid #00abf0;
+}
+
+.btn-box-white::before {
+ content: '';
+ width: 0;
+ height: 100%;
+ border-radius: 10px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ border: none;
+ background-color: #00abf0;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.btn-box-white:hover::before {
+ width: 180px;
+}
+
+.about-pic {
+    border-radius: 15px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 20px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #081b29;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.list-tab {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.tab-contents ul li span {
+    color: #00abf0;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+
+/* Media query for desktop screens */
+@media screen and (min-width: 992px) {
+    .skills {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+    .skills .bx-minus {
+        transform: rotate(90deg);
+    }
+
+    .skills-container {
+        padding-top: 7%;
+    }
+
+    .container-white {
+        padding: 60px;
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 991px) {
+    .skills-container {
+        padding-top: 10%;
+    }
+
+    .container-white {
+        padding: 30px;
+    }
+    
+}
