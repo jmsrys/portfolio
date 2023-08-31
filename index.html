@@ -26,12 +26,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("nZca4kIn7QEsxaWvS");
+    })();
+  </script>
 </head>
 
 
 <body>
     <!-- --------------------------------------------NAVBAR------------------------------------------- -->
-    <div class="container">
+    <div class="container" id="navbar">
         <header class="header">
           <nav class="navbar navbar-expand-lg px-0 pt-md-5">
             <a class="navbar-brand ml-md-0" href="#">jmsrys</a>
@@ -41,20 +51,17 @@
           
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hero">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#about-me">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Skills</a>
+                  <a class="nav-link" href="#portfolio">Works</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
               
@@ -65,15 +72,18 @@
       </div>
 
     <!-- ------------------------------------------------HERO------------------------------------------------- -->
-    <section class="blue-section">
+    <section class="blue-section" id="hero">
         <div class="container container-blue col-xl-10 col-xxl-8 px-4 pt-5">
             <div class="row text-center align-items-center g-lg-5">
                 <div class="col-lg-7 text-lg-start">
                     <h1 class="display-4 lh-1 mb-3">Hi, I'm John Mark</h1>
                     <h3 class="">BS Computer Engineering</h3>
-                    <p class="hero-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, quibusdam iste dolorem dicta harum doloribus corporis? Maiores id repellendus possimus a corrupti, minima molestiae exercitationem? Beatae, sapiente? Ad, voluptas explicabo.</p>
+                    <p class="hero-info">I am a soon-to-be graduate from Polytechnic University of the Philippines! I've got a knack for crafting digital wonders and turning lines of code into captivating experiences. Whether it's diving into web development or creating innovative network solutions, I've got the tools and the skills to bring ideas to life.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn-box-blue" fdprocessedid="oisjbb">Let's Talk</button>
+                        <a href="#contact">
+                          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn-box-blue" fdprocessedid="oisjbb">Let's Talk</button>
+                        </a>
+                      
                     </div>
                 </div>
                 
@@ -82,9 +92,9 @@
                 </div>
 
                 <div class="home-sci pt-5 pt-lg-0 px-5 px-lg-3 col-lg-2 ">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/johnmarkrys/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/jmsrys" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/john-mark-reyes-30b4b5219/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
           </div>
@@ -99,8 +109,7 @@
                 </div>
                 <div class="col-lg-7 text-lg-start">
                     <h1 class="display-4 lh-1 mb-3">About Me</h1>
-                    <p class="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse aliquid pariatur deleniti, laudantium delectus omnis eligendi, sint voluptas optio, impedit perspiciatis reprehenderit magnam. Placeat velit fuga perspiciatis in pariatur!
-                    Et qui debitis, necessitatibus quaerat at consequatur. Unde, assumenda. Minima quibusdam impedit ipsam temporibus expedita nam, voluptatem, harum perspiciatis reprehenderit dignissimos aut culpa repellendus reiciendis, officia cumque accusamus libero voluptates.</p>
+                    <p class="about-info">Hey there, I'm John Mark Reyes, from Taguig City. With a passion for problem-solving and a penchant for creativity, I've spent my college years honing my web, software, and network develpoment skills. From sleek websites that catch the eye to managing networks that simplifies tasks, I'm all about making technology work seamlessly for people. <br>Buckle up and join me as we journey through lines of code and digital dreams. Welcome to my corner of the web!</p>
                     
 
                     <div class="tab-titles">
@@ -110,28 +119,27 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul class="list-tab">
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
-                            <li><span>App Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web Interfaces using HTML, CSS (Bootstrap), JavaScript (NodeJS), basic SQL, and Content Management System using WordPress</li>
+                            <li><span>Programming</span><br>Basic Programming Using Python, C#, and Java</li>
+                            <li><span>Troubleshooting</span><br>Basic Software, Hardware, and Network Troubleshooting </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul class="list-tab">
-                            <li><span>UI/UX2</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
-                            <li><span>App Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Technical Intern - VisibleTeam Solutions OPC</span><br>Tasked on doing website design and administration using WordPress</li>                    
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul class="list-tab">
-                            <li><span>UI/UX3</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
-                            <li><span>App Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>BS Computer Engineering</span><br>Polytechnic University of the Philippines - Manila</li>
+                            <li><span>Senior High - STEM</span><br>Polytechnic University of the Philippines - Manila</li>
+                            <li><span>Junior High</span><br>Rizal High School - Pasig</li>
                         </ul>
                     </div>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start justify-content-center">
-                        <button type="button" class="btn btn-primary btn-lg me-md-2 btn-box-white" fdprocessedid="oisjbb">Download CV</button>
+                      <a href="assets/JOHN MARK REYES_CV.pdf" download> <button type="button" class="btn btn-primary btn-lg me-md-2 btn-box-white" fdprocessedid="oisjbb">Download CV</button></a>
+                       
                     </div>
                 </div>
                 
@@ -145,57 +153,59 @@
       <div class="container container-blue col-xl-10 col-xxl-8 px-4 pt-5">
         <div class="row text-center align-items-center ">
           <h1 class="display-4 lh-1 mb-3">Featured Works</h1> 
-          <p class="works-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem nemo nesciunt magni!</p>
+          <p class="works-info">I co-created some of these projects as part of our academic requirements</p>
           
           <div class="slide-container">
             <div class="work-list swiper-wrapper">
               <div class="work swiper-slide">
-                <img src="assets/work1.jpg" class="d-block mx-lg-auto img-fluid work1-pic" alt="work1-img" height="600" loading="lazy">
+                <img src="assets/proj1.jpg" class="d-block mx-lg-auto img-fluid work1-pic" alt="work1-img" height="600" loading="lazy">
                 <div class="layer">
                   <h4>Social Media App1</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
-                  <a href="#"><i class='bx bx-link-external'></i></a>
+                 
                 </div>
               </div>
               <div class="work swiper-slide">
-                <img src="assets/work2.jpg" class="d-block mx-lg-auto img-fluid work2-pic" alt="work2-img" height="600" loading="lazy">
+                <img src="assets/proj2.png" class="d-block mx-lg-auto img-fluid work2-pic" alt="work2-img" height="600" loading="lazy">
                 <div class="layer">
                   <h4>Social Media App2</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
-                  <a href="#"><i class='bx bx-link-external'></i></a>
+                
                 </div>
               </div>
               <div class="work swiper-slide">
-                <img src="assets/work3.jpg" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
+                <img src="assets/proj3.png" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
                 <div class="layer">
                   <h4>Social Media App3</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
-                  <a href="#"><i class='bx bx-link-external'></i></a>
+                
                 </div>
               </div>
               <div class="work swiper-slide">
-                <img src="assets/work3.jpg" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
+                <img src="assets/proj4.jpg" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
                 <div class="layer">
                   <h4>Social Media App4</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
-                  <a href="#"><i class='bx bx-link-external'></i></a>
+                
                 </div>
               </div>
               <div class="work swiper-slide">
-                <img src="assets/work3.jpg" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
+                <img src="assets/proj5.png" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
                 <div class="layer">
                   <h4>Social Media App5</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
-                  <a href="#"><i class='bx bx-link-external'></i></a>
+                  
                 </div>
               </div>
-  
+              
+              
               
             </div>
             <div class="swiper-button-next slide-btn"></div>
-              <div class="swiper-button-prev slide-btn"></div>
-              <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev slide-btn"></div>
+          <div class="swiper-pagination"></div>
           </div>
+          
           
           
 
@@ -214,27 +224,28 @@
         <div class="row text-center align-items-center ">
           <div class="contact-left col-lg-5 text-lg-start">
             <h1 class="display-4 lh-1 mb-3">Contact Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi expedita alias vitae sunt at similique provident dolorem voluptas culpa ipsum?</p>
+            <p>I am currently looking for a career where I can excel in my respective field. Talk to me if you have the time! </p>
             <p><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="25px" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M408 120c0 54.6-73.1 151.9-105.2 192c-7.7 9.6-22 9.6-29.6 0C241.1 271.9 168 174.6 168 120C168 53.7 221.7 0 288 0s120 53.7 120 120zm8 80.4c3.5-6.9 6.7-13.8 9.6-20.6c.5-1.2 1-2.5 1.5-3.7l116-46.4C558.9 123.4 576 135 576 152V422.8c0 9.8-6 18.6-15.1 22.3L416 503V200.4zM137.6 138.3c2.4 14.1 7.2 28.3 12.8 41.5c2.9 6.8 6.1 13.7 9.6 20.6V451.8L32.9 502.7C17.1 509 0 497.4 0 480.4V209.6c0-9.8 6-18.6 15.1-22.3l122.6-49zM327.8 332c13.9-17.4 35.7-45.7 56.2-77V504.3L192 449.4V255c20.5 31.3 42.3 59.6 56.2 77c20.5 25.6 59.1 25.6 79.6 0zM288 152a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
               Taguig City</p>
             <p><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="25px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
-              gmail@gmail.com</p>
+              jmreyes411@gmail.com</p>
             <p><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="25px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-              09089663341</p>
+              (+63) 908-966-3341</p>
             <div class="social-icons">
-              <a href="#"><i class='bx bxl-facebook-square' ></i></a>
-              <a href="#"><i class='bx bxl-twitter' ></i></a>
-              <a href="#"><i class='bx bxl-instagram' ></i></a>
-              <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+              <a href="https://www.facebook.com/johnmarkrys/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-square' ></i></a>
+              <a href="https://github.com/jmsrys" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
+              <a href="https://www.instagram.com/johnmarkryss/?hl=en/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a>
+              <a href="https://www.linkedin.com/in/john-mark-reyes-30b4b5219/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square' ></i></a>
             </div>
           </div>
           <div class="contact-right col-md-10 ml-auto col-lg-5 mb-5 mb-md-0 text-lg-start">
             <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="text" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <input id="name" type="text" name="Name" placeholder="Your Name" required>
+              <input id="email" type="text" name="Email" placeholder="Your Email" required>
+              <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
 
-              <button type="submit" class="btn btn2 btn-primary btn-lg me-md-2 btn-box-white" fdprocessedid="oisjbb">Send</button>
+              <button type="submit" class="btn btn2 btn-primary btn-lg me-md-2 btn-box-white" fdprocessedid="oisjbb" onclick="sendMail()">Send</button>
+              
             </form>
           </div>
         </div>
@@ -273,20 +284,7 @@
 
 
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+   
 </body>
 </html>
