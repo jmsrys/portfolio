@@ -522,6 +522,14 @@ form btn2 {
         text-align: center;
     }
     
+    .tab-titles {
+        display: flex;
+        margin: 0 
+    }
 
+    .container-blue h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
     
 }
