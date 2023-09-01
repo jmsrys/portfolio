@@ -28,14 +28,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-    (function(){
-      emailjs.init("nZca4kIn7QEsxaWvS");
-    })();
-  </script>
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("nZca4kIn7QEsxaWvS");
+  })();
+</script>
 </head>
 
 
@@ -160,40 +161,40 @@
               <div class="work swiper-slide">
                 <img src="assets/proj1.jpg" class="d-block mx-lg-auto img-fluid work1-pic" alt="work1-img" height="600" loading="lazy">
                 <div class="layer">
-                  <h4>Social Media App1</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
+                  <h4>SchedYOUler</h4>
+                  <p>A to-do scheduling website that lists all the things you need to do today and in the future.</p>
                  
                 </div>
               </div>
               <div class="work swiper-slide">
                 <img src="assets/proj2.png" class="d-block mx-lg-auto img-fluid work2-pic" alt="work2-img" height="600" loading="lazy">
                 <div class="layer">
-                  <h4>Social Media App2</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
+                  <h4>Labyrinth 2D</h4>
+                  <p>A PC maze-game that incorporates quizzes as challenges to keep the users entertained.</p>
                 
                 </div>
               </div>
               <div class="work swiper-slide">
                 <img src="assets/proj3.png" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
                 <div class="layer">
-                  <h4>Social Media App3</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
+                  <h4>ACPR Mobile Business Manager</h4>
+                  <p>A simple mobile POS built for Sari-Sari Stores.</p>
                 
                 </div>
               </div>
               <div class="work swiper-slide">
                 <img src="assets/proj4.jpg" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
                 <div class="layer">
-                  <h4>Social Media App4</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
+                  <h4>Quizmate</h4>
+                  <p>A mobile application built for students who wants to create their own reviewer and turn it into a quiz.</p>
                 
                 </div>
               </div>
               <div class="work swiper-slide">
                 <img src="assets/proj5.png" class="d-block mx-lg-auto img-fluid work3-pic" alt="work3-img" height="600" loading="lazy">
                 <div class="layer">
-                  <h4>Social Media App5</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, minima at? Vitae nulla explicabo maiores!</p>
+                  <h4>Web Design</h4>
+                  <p>A simple web design made using WordPress.</p>
                   
                 </div>
               </div>
@@ -239,14 +240,15 @@
             </div>
           </div>
           <div class="contact-right col-md-10 ml-auto col-lg-5 mb-5 mb-md-0 text-lg-start">
-            <form>
-              <input id="name" type="text" name="Name" placeholder="Your Name" required>
-              <input id="email" type="text" name="Email" placeholder="Your Email" required>
-              <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+            <form name="submit-to-google-sheet">
+              <input  id="name" type="text" name="Name" placeholder="Your Name" required>
+              <input  id="email" type="text" name="Email" placeholder="Your Email" required>
+              <textarea  id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
 
-              <button type="submit" class="btn btn2 btn-primary btn-lg me-md-2 btn-box-white" fdprocessedid="oisjbb" onclick="sendMail()">Send</button>
+              <button type="submit" class="btn btn2 btn-primary btn-lg me-md-2 btn-box-white">Send</button>
               
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>

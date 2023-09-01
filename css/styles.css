@@ -438,6 +438,11 @@ form btn2 {
     cursor: pointer;
 }
 
+#msg {
+    color: #081b29;
+    display: block;
+}
+
 
 /* ----------FOOTER---------- */
 #footer {
