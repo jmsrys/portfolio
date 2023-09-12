@@ -47,10 +47,11 @@
 
 <body>
     <!-- --------------------------------------------NAVBAR------------------------------------------- -->
-    <div class="container" id="navbar">
-        <header class="header">
+    <div class="container " id="navbar">
+        <header class="header hidden">
           <nav class="navbar navbar-expand-lg px-0 pt-md-5">
-            <a class="navbar-brand ml-md-0" href="#">jmsrys</a>
+            <a class="navbar-brand ml-md-0" href="#">jmsrys <span class="animate" style="--i:1;"></span></a>
+        
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" fdprocessedid="jfcy1g">
               <span class="navbar-toggler-icon"><i class='bx bx-menu'></i></span>
             </button>
@@ -69,7 +70,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
+                <span class="animate" style="--i:2;"></span>
               </ul>
+              
               
             </div>
           </nav>
@@ -78,8 +81,8 @@
       </div>
 
     <!-- ------------------------------------------------HERO------------------------------------------------- -->
-    <section class="blue-section" id="hero">
-        <div class="container container-blue col-xl-10 col-xxl-8 px-4 pt-5">
+    <section class="blue-section show-animate" id="hero">
+        <div class="container container-blue col-xl-10 col-xxl-8 px-4 pt-5 hidden">
             <div class="row text-center align-items-center g-lg-5">
                 <div class="col-lg-7 text-lg-start">
                     <h1 class="display-4 lh-1 mb-3">Hi, I'm John Mark</h1>
@@ -108,7 +111,7 @@
 
     <!-- -----------------------------------------------------------ABOUT------------------------------------------------------ -->
     <section class="white-section" id="about-me">
-        <div class="container container-white col-xl-10 col-xxl-8 px-4">
+        <div class="container container-white col-xl-10 col-xxl-8 px-4 hidden">
             <div class="row text-center align-items-center g-lg-5">
                 <div class="col-md-10 mx-auto col-lg-5 mb-5 mb-md-0">
                     <img src="assets/aboutpic2.png" class="d-block mx-lg-auto img-fluid about-pic" alt="face-img" height="600" loading="lazy">
@@ -155,8 +158,8 @@
 
 
     <!-- -----------------------------------------------WORKS------------------------------------------------ -->
-    <section class="blue-section" id="portfolio">
-      <div class="container container-blue col-xl-10 col-xxl-8 px-4 pt-5">
+    <section class="blue-section " id="portfolio">
+      <div class="container container-blue col-xl-10 col-xxl-8 px-4 pt-5 hidden">
         <div class="row text-center align-items-center ">
           <h1 class="display-4 lh-1 mb-3">Featured Works</h1> 
           <p class="works-info">I co-created some of these projects as part of our academic requirements. Drag or click image to see info.</p>
@@ -231,8 +234,8 @@
 
 
     <!-- -------------------------------CONTACT----------------------------- -->
-    <section class="white-section" id="contact">
-      <div class="container container-white col-xl-10 col-xxl-8 px-4 pt-5">
+    <section class="white-section " id="contact">
+      <div class="container container-white col-xl-10 col-xxl-8 px-4 pt-5 hidden">
         <div class="row text-center align-items-center ">
           <div class="contact-left col-lg-5 text-lg-start">
             <h1 class="display-4 lh-1 mb-3">Contact Me</h1>
@@ -266,8 +269,8 @@
     </section>
 
     <!-- -------------------------------------FOOTER---------------------------------- -->
-    <section class="blue-section" id="footer">
-      <div class="container">
+    <section class="blue-section " id="footer">
+      <div class="container hidden">
         <footer class="">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item2">

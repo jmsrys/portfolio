@@ -22,13 +22,19 @@ body {
 }
 
 .navbar-toggler {
+    position: relative;
     border-color: #ededed;
 }
 
 .navbar-brand {
+    position: relative;
     color: #ededed;
     font-size: 25px;
     font-weight: 600;
+}
+
+.navbar-nav{
+    position: relative;
 }
 
 .navbar-brand:hover {
@@ -467,6 +473,46 @@ form btn2 {
 }
 
 
+/* ANIMATIONS */
+
+/* .animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 0;
+}
+
+.navbar-brand .animate,
+.navbar-nav .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+} */
+
+.hidden{
+    opacity: 0;
+    /* filter: blur(5px); */
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    /* filter: blur(5px); */
+    transform: translateX(0);
+}
+
+
+
 
 /* Media query for desktop screens */
 @media screen and (min-width: 992px) {
@@ -490,6 +536,8 @@ form btn2 {
     .container-blue {
         padding: 60px 0 0;
     }
+
+   
 }
 
 /* Media query for mobile screens */
@@ -543,3 +591,4 @@ form btn2 {
     }
     
 }
+
